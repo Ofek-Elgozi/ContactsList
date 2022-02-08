@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/mainlistrow_image_v"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/imageborder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/mainlistrow_text_v"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:background="#E3E3E3"
+        android:fontFamily="@font/simonetta_black_italic"
+        android:text="Phone: "
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mainlistrow_image_v"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainlistrow_text_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:background="#E3E3E3"
+        android:fontFamily="@font/simonetta_black_italic"
+        android:text="Name: "
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mainlistrow_image_v"
+        app:layout_constraintTop_toBottomOf="@+id/mainlistrow_text_v" />
+
+    <TextView
+        android:id="@+id/mainlistrow_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E3E3E3"
+        android:fontFamily="@font/simonetta_black_italic"
+        android:text="0507308020"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/mainlistrow_text_v"
+        app:layout_constraintStart_toEndOf="@+id/mainlistrow_text_v"
+        app:layout_constraintTop_toTopOf="@+id/mainlistrow_text_v"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/mainlistrow_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E3E3E3"
+        android:fontFamily="@font/simonetta_black_italic"
+        android:text="Ofek"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/mainlistrow_text_v2"
+        app:layout_constraintStart_toEndOf="@+id/mainlistrow_text_v2"
+        app:layout_constraintTop_toTopOf="@+id/mainlistrow_text_v2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageButton
+        android:id="@+id/mainlistrow_call"
+        android:layout_width="75dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/imageborder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mainlistrow_sms"
+        app:layout_constraintTop_toTopOf="@+id/mainlistrow_sms"
+        app:srcCompat="@drawable/call" />
+
+    <ImageButton
+        android:id="@+id/mainlistrow_sms"
+        android:layout_width="75dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/imageborder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/mainlistrow_text_v2"
+        app:layout_constraintTop_toBottomOf="@+id/mainlistrow_text_v2"
+        app:srcCompat="@drawable/sms" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

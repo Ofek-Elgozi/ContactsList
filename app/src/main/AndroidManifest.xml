@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ContactList">
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:name="com.example.ContactList.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="ContactList"
+        android:roundIcon="@drawable/app"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.ContactList">
+        <activity
+            android:name="com.example.ContactList.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
