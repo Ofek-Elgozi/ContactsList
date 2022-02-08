@@ -9,6 +9,8 @@ import androidx.navigation.ui.NavigationUI;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.ContactList.Model.Model;
+
 public class MainActivity extends AppCompatActivity
 {
     NavController navCtrl;

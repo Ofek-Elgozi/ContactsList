@@ -6,7 +6,7 @@ import androidx.room.RoomDatabase;
 
 import com.example.ContactList.MyApplication;
 
-@Database(entities = {Contact.class}, version = 1)
+@Database(entities = {Contact.class}, version = 2)
 abstract class AppLocalDbRepository extends RoomDatabase
 {
     public abstract ContactDao contactDao();
